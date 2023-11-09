@@ -5,63 +5,32 @@ from pyvis.network import Network
 g = nx.Graph()
 
 # Add nodes (representing different pages of your website)
-g.add_node('Bio', title='Bio', url='bio.html')
-g.add_node('Research', title='Research', url='research.html')
-g.add_node('Music', title='Music', url='music.html')
-g.add_node('Awards', title='Awards', url='awards.html')
-g.add_node('Contact', title='Contact', url='contact.html')
+g.add_node('Bio', size=20)
+g.add_node('Research', size=20)
 
 # Define the connections between nodes
-# In this case, all nodes are connected to the central 'Home' node
-g.add_edge('Bio', 'Home')
-g.add_edge('Research', 'Home')
-g.add_edge('Music', 'Home')
-g.add_edge('Awards', 'Home')
-g.add_edge('Contact', 'Home')
+g.add_edge('Bio', 'Research')  # Assuming you want a direct link between 'Bio' and 'Research'
 
-# Create a Pyvis network from the NetworkX graph
-nt = Network('500px', '100%', notebook=True)
+# Initialize Pyvis network object; set notebook to False since this is for an HTML file
+nt = Network('500px', '500px', notebook=False)
+
+# Import the networkx graph
 nt.from_nx(g)
 
-# Set options for interactivity
-nt.set_options("""
-var options = {
-  "nodes": {
-    "borderWidth": 2,
-    "borderWidthSelected": 4,
-    "shape": "dot",
-    "size": 30,
-    "font": {
-      "size": 32
-    }
-  },
-  "edges": {
-    "smooth": false
-  },
-  "physics": {
-    "forceAtlas2Based": {
-      "gravitationalConstant": -100,
-      "centralGravity": 0.01,
-      "springLength": 100,
-      "springConstant": 0.08
-    },
-    "maxVelocity": 50,
-    "solver": "forceAtlas2Based",
-    "timestep": 0.35,
-    "stabilization": {
-      "enabled": true,
-      "iterations": 2000
-    }
-  }
-}
-""")
+# Set the physics options for stability (optional)
+nt.options.physics.stabilization.iterations = 200
 
-# Customize node interaction
+# Set the titles and URLs for the nodes
 for node in nt.nodes:
-    node["title"] += "<br>Click to visit"
-    node["value"] = 5  # Control the size of nodes
-    if 'url' in node:
-        node["url"] = node.pop("url")  # Assign the URL to the node
+    if node['id'] == 'Bio':
+        node['title'] = 'Bio'
+        node['url'] = 'bio.html'
+    elif node['id'] == 'Research':
+        node['title'] = 'Research'
+        node['url'] = 'research.html'
+
+# Make the nodes clickable by setting the navigation to True
+nt.options.interaction.navigation = True
 
 # Generate and save the network graph to an HTML file
-nt.show('network.html')
+nt.show('index.html')

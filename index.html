@@ -1,112 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bernardo Cantone | Home</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #50b3a2;
-            color: white;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #e8491d 3px solid;
-        }
-        header a {
-            color: #ffffff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        header .highlight, header .current a {
-            color: #e8491d;
-            font-weight: bold;
-        }
-        header a:hover {
-            color: #ffffff;
-            font-weight: bold;
-        }
-        #showcase {
-            min-height: 400px;
-            background: url('image.jpg') no-repeat 0 -400px;
-            text-align: center;
-            color: #ffffff;
-        }
-        #showcase h1 {
-            margin-top: 100px;
-            font-size: 55px;
-            margin-bottom: 10px;
-        }
-        #showcase p {
-            font-size: 20px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div id="branding">
-                <h1>Bernardo Cantone</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li class="current"><a href="index.html">Home</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <!-- Add more navigation links as needed -->
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="main.css" />
 
-    <div id="showcase">
-        <div class="container">
-            <h1>Welcome to my personal website</h1>
-            <p>Discover my work, research, and professional journey.</p>
+    <link
+      href="https://fonts.googleapis.com/css?family=Ma+Shan+Zheng|Titillium+Web|Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <title>Personal Website</title>
+    <nav>
+      <img src="/Users/bernardocantone/Library/CloudStorage/OneDrive-CSIRO/personal_web/_DSC0285.jpg" alt="Profile Picture" />
+      <p class="headname">Bernardo Cantone</p>
+      <ul>
+        <li><a href="#home"> HOME</a></li>
+        <li><a href="#about"> ABOUT ME </a></li>
+        <li><a href="#services">RESEARCH</a></li>
+      </ul>
+    </nav>
+  </head>
+  <body>
+    <div class="main">
+      <div class="home" id="home">
+        <img src="/Users/bernardocantone/Library/CloudStorage/OneDrive-CSIRO/personal_web/_DSC0285.jpg" alt="Profile" />
+        <p class="namestart">
+          Hello, I am Bernardo. <br />
+          Researcher, data scientist, musician, artist, and just now web developer
+        </p>
+        <p class="nameabout">
+          I work as a Postdoctoral researcher for the CSIRO in Australia 
+          at the Valuing Sustainability Future Science Platform.
+          I am an experienced researcher with a sustained track record in higher education. 
+          I have carried out extensive research in areas including the Economics of Innovation, 
+          Environmental Sustainability, and Project Management. 
+          I hold an MSc in Advanced Mechanical Engineering from the University of Sussex 
+          and a PhD in Economics of Innovation from the Science Policy Research Unit (SPRU). 
+        </p>
+        <div class="socialicon">
+            <div>
+                <a href="https://www.linkedin.com/in/bernardo-cantone-6335b09b/">
+                  <img src="/Users/bernardocantone/Library/CloudStorage/OneDrive-CSIRO/personal_web/Users/images-linkedin-logo-png-14.png" />
+                </a>
+                <a href="https://github.com/Bernaz">
+                  <img src="https://img.icons8.com/dusk/64/000000/github.png" />
+                </a>
+                <a href="https://www.instagram.com/your-username">
+                  <img src="https://img.icons8.com/cute-clipart/64/000000/instagram-new.png" />
+                </a>
+                <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwi604Wj-7WCAxW-WGwGHfrWDRYQFnoECA0QAQ&url=https%3A%2F%2Fpeople.csiro.au%2Fc%2Fb%2Fbernardo-cantone&usg=AOvVaw14EkPfdTNFvS3_DjBPWGGC&opi=89978449">
+                  <img src="/Users/bernardocantone/Library/CloudStorage/OneDrive-CSIRO/personal_web/Users/kisspng-csiro-logo-research-font-science-5c8d1e996ace64.7124075715527522814375.jpg" />
+                </a>
+              </div>
+              
+        <div class="about" id="about">
+        <h1>About Me</h1>
+        <p class="skill">Research</p>
+         <div class="skills">
+            <div class="html">90%</div>
         </div>
-    </div>
-
-    <div class="container">
-        <section id="main">
-            <h1>About Me</h1>
+        <p class="skill">Programming</p>
+        <div class="skills">
+          <div class="wp">70%</div>
+        </div>
+        <p class="skill">Music</p>
+        <div class="skills">
+          <div class="js">70%</div>
+        </div>
+        <p class="skill">Dance</p>
+        <div class="skills">
+          <div class="wp">70%</div>
+        </div>
+      </div>
+      <div class="about" id="about">
+        <h1>Data Skills</h1>
+        <p class="skill">R</p>
+        <div class="skills">
+          <div class="html">90%</div>
+        </div>
+        <p class="skill">Python</p>
+        <div class="skills">
+          <div class="js">80%</div>
+        </div>
+        <p class="skill">STATA</p>
+        <div class="skills">
+          <div class="php">75%</div>
+        </div>
+        <p class="skill">SQL</p>
+        <div class="skills">
+          <div class="wp">80%</div>
+        </div>
+        <p class="skill">Excell</p>
+        <div class="skills">
+          <div class="wp">80%</div>
+        </div>
+        <p class="skill">HTML & CSS</p>
+        <div class="skills">
+          <div class="jm">65%</div>
+        </div>
+      </div>
+      <div class="services" id="services">
+        <h1>Latest Research</h1>
+        <div class="service-details">
+          <div>
+            <img src="/Users/bernardocantone/Library/CloudStorage/OneDrive-CSIRO/personal_web/Users/bernardocantone/Library/CloudStorage/OneDrive-CSIRO/personal_web/Users/kisspng-csiro-logo-research-font-science-5c8d1e996ace64.7124075715527522814375.jpg" />
+            <h3><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/sd.2195" target="_blank"> CSIRO: Knowledge Common </a></h3>
             <p>
-                Hello hello! I'm Bernardo Cantone, a researcher and academic with a passion for [Your Field]. I have spent the last [number] years deeply involved in studying [Your Research Topic]. This website is a portfolio of my professional life and a collection of my research findings and publications.
+              Working in the Knowledge Common (Track 2) 
+              group, in the Valuing Sustainability Future Science Platform at the CSIRO Australia, 
+              I analysed the production of new knowledge in form of green technological  innovation generated by the emission trading scheme (EU-ETS). 
+              We find that carbon pricing effectively enhance the transition to low-carbon economy for countries' Net-zero target.
             </p>
-            <p>Feel free to explore my research and reach out if you have any questions or potential collaborations in mind!</p>
-        </section>
-    </div>
+          </div>
+          <div>
+            <img src="/Users/bernardocantone/Library/CloudStorage/OneDrive-CSIRO/personal_web/Unknown.png" />
+            <h3><a href="https://onlinelibrary.wiley.com/doi/full/10.1002/sd.2195" target="_blank">Sussex SSRP: Financial Crises and Environemntal Sustainability</a></h3>
+            <p>
+                Working with the research unit ‘Financial Crises and Environmental Sustainability (FCES)’ of the Sussex Sustainability Research Project (SSRP). 
+                This project sheds new light on the interplay between financial crises and sustainable development. 
+                This study investigates the environmental impacts of the economic slowdown known as the "Great Stagnation," revealing complex outcomes: 
+                biodiversity loss and reduced global fish stocks contrast with improvements in air quality and reduced forest loss. 
+                It concludes that economic slowdowns alone do not guarantee sustainable environmental outcomes, emphasizing the need for comprehensive environmental policies during all economic conditions.
+            </p>
+        </div>
+          <div>
+            <img src="/Users/bernardocantone/Library/CloudStorage/OneDrive-CSIRO/personal_web/20230812000023!Apm-logo-open-graph-1200x630.png" />
+            <h3>APM: Project Management Conditions for Project Success</h3>
+            <p>
+                The research addresses project-based organizations and professionals, outlining strategies for enhancing project success, such as leveraging technology and AI, 
+                prioritizing informal mentoring, and establishing roles for knowledge management. Key findings include nine dynamic conditions—ranging from interpersonal skills to sustainability—that are crucial for adapting project management practices to contemporary challenges, including those posed by the Covid-19 pandemic.
+            </p>
+          </div>
 
+          </a>
+        </div>
+      </div>
+    </div>
     <footer>
-        <p>Bernardo Cantone © 2023</p>
+
+      </p>
     </footer>
-</body>
+  </body>
 </html>
