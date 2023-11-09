@@ -200,9 +200,13 @@ nav a:hover:after {
 
 .service-details div {
   width: 70%;
-  height: 120px;
-  margin-bottom: 20px;
+  height: auto; /* Remove fixed height to allow content to determine the height */
+  margin-bottom: 20px; /* You can adjust this as needed for space between each service block */
+  padding: 20px; /* Add padding inside the div for spacing around the text */
+  box-sizing: border-box; /* Include padding in the width calculation */
+  overflow: hidden; /* Ensures that the content does not overflow the div */
 }
+
 
 .service-details div img {
   margin-top: 10px;
