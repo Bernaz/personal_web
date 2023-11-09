@@ -54,7 +54,7 @@ nav img {
 
 .headname {
   font-size: 30px;
-  font-family: "Ma Shan Zheng", cursive;
+  font-family: "Gill Sans Extrabold", sans-serif;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -191,7 +191,7 @@ nav a:hover:after {
   background-color: #1799b6;
 }
 
-.services {
+.services1 {
   text-align: left;
   margin-bottom: 50px;
   margin-left: 50px;
@@ -220,6 +220,13 @@ nav a:hover:after {
   font-size: 20px;
   margin-right: 10px;
   font-family: "Varela Round", sans-serif;
+}
+
+.services2 {
+  text-align: left;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 /* /////////////////////footer///////////////////////////////// */
