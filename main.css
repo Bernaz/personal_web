@@ -222,27 +222,6 @@ nav a:hover:after {
   font-family: "Varela Round", sans-serif;
 }
 
-.blog {
-  margin-left: 50px;
-}
-
-.blog img {
-  width: 300px;
-  height: 300px;
-  margin-right: 20px;
-  margin-bottom: 30px;
-}
-
-.contact {
-  margin-left: 50px;
-}
-
-.contact-socialicon {
-  text-align: center;
-  margin-top: 150px;
-  margin-bottom: 20px;
-}
-
 /* /////////////////////footer///////////////////////////////// */
 
 footer p {
